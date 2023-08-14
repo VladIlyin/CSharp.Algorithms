@@ -1,0 +1,10 @@
++Implement recursive traversal as static methods (http://csharpexamples.com/tag/postorder-traversal/)
++Make all traversal methods static (or extension)
+-https://www.geeksforgeeks.org/construct-tree-from-given-inorder-and-preorder-traversal/
+-Bug in TraverseBreadthFirst
+-Try to make recursive algorithm for tree items counting
+-Implement Binary search tree
+	-Insert
+	-Search
+-Create BST from sorted array (https://medium.com/@vitkarpov/cracking-the-coding-interview-4-2-9567d6986853)
+-Implement algorithm for palindrom searching (https://habr.com/ru/post/276195/) See Info for details.

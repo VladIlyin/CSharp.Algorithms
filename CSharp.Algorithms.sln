@@ -1,0 +1,50 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31825.309
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{1349140E-F0D5-4F3F-9F92-845A69B4A897}"
+	ProjectSection(SolutionItems) = preProject
+		Info.txt = Info.txt
+		TODO.txt = TODO.txt
+		Trees Links.txt = Trees Links.txt
+	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CSharp.Algorithms.Core", "CSharp.Algorithms.Core\CSharp.Algorithms.Core.csproj", "{CF41306D-BC25-475F-AF47-15666E8AFC3E}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CSharp.Algorithms", "CSharp.Algorithms\CSharp.Algorithms.csproj", "{066BB219-C440-4023-AB78-D94BE5F9C015}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CSharp.Algorithms.Problems", "CSharp.Algorithms.Problems\CSharp.Algorithms.Problems.csproj", "{1B53D3FB-17F3-48B6-8646-D9B581B8DFF2}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CSharp.Algorithms.UnitTests", "CSharp.Algorithms.UnitTests\CSharp.Algorithms.UnitTests.csproj", "{EB069CCC-6B5F-43F2-B465-0EC1CA81B6DC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CF41306D-BC25-475F-AF47-15666E8AFC3E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CF41306D-BC25-475F-AF47-15666E8AFC3E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CF41306D-BC25-475F-AF47-15666E8AFC3E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CF41306D-BC25-475F-AF47-15666E8AFC3E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{066BB219-C440-4023-AB78-D94BE5F9C015}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{066BB219-C440-4023-AB78-D94BE5F9C015}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{066BB219-C440-4023-AB78-D94BE5F9C015}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{066BB219-C440-4023-AB78-D94BE5F9C015}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1B53D3FB-17F3-48B6-8646-D9B581B8DFF2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1B53D3FB-17F3-48B6-8646-D9B581B8DFF2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1B53D3FB-17F3-48B6-8646-D9B581B8DFF2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1B53D3FB-17F3-48B6-8646-D9B581B8DFF2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EB069CCC-6B5F-43F2-B465-0EC1CA81B6DC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EB069CCC-6B5F-43F2-B465-0EC1CA81B6DC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EB069CCC-6B5F-43F2-B465-0EC1CA81B6DC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EB069CCC-6B5F-43F2-B465-0EC1CA81B6DC}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {7F2BB3EF-BEF8-4D42-AE51-AACDF11E3205}
+	EndGlobalSection
+EndGlobal

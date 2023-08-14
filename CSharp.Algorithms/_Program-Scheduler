@@ -1,0 +1,54 @@
+﻿//var procTask = Console.ReadLine().Split(" ");
+
+//var procCount = Convert.ToInt32(procTask[0]);
+//var taskCount = Convert.ToInt32(procTask[1]);
+
+//var pwrConsumption = new int[procCount];
+//var freeProcessors = new PriorityQueue<int, int>();
+
+//var idx = 0;
+//foreach (var pwr in Console.ReadLine().Split(" "))
+//{
+//    pwrConsumption[idx] = Convert.ToInt32(pwr);
+//    freeProcessors.Enqueue(idx, idx);
+//    idx++;
+//}
+
+//Array.Sort(pwrConsumption);
+
+//var tasks = new List<(int time, int runtime)>();
+//for (var i = 0; i < taskCount; i++)
+//{
+//    var task = Console.ReadLine().Split(" ");
+//    tasks.Add((Convert.ToInt32(task[0]), Convert.ToInt32(task[1])));
+//}
+
+//long totalPowerConsumption = 0;
+//var busyProcessors = new PriorityQueue<(int procId, int runtime), int>();
+
+//foreach (var (timeInSec, runtime) in tasks)
+//{
+//    if (busyProcessors.Count != 0 && timeInSec > busyProcessors.Peek().runtime)
+//    {
+//        while (busyProcessors.Count > 0
+//               && timeInSec > busyProcessors.Peek().runtime)
+//        {
+//            var (procId, _) = busyProcessors.Dequeue();
+//            freeProcessors.Enqueue(procId, procId);
+
+//            if (busyProcessors.Count == 0)
+//            {
+//                break;
+//            }
+//        }
+//    }
+
+//    if (busyProcessors.Count >= procCount) continue;
+
+//    var (nextRt, nextProcNum) = (timeInSec + runtime - 1, freeProcessors.Dequeue());
+
+//    busyProcessors.Enqueue((nextProcNum, nextRt), nextRt);
+//    totalPowerConsumption += (long)runtime * pwrConsumption[nextProcNum];
+//}
+
+//Console.WriteLine(totalPowerConsumption);

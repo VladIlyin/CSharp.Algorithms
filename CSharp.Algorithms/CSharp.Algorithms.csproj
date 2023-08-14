@@ -1,0 +1,33 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="_Program" />
+    <None Remove="_Program-Scheduler" />
+    <None Remove="__Program" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Include="_Program" />
+    <Compile Include="_Program-Scheduler" />
+    <Compile Include="__Program" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\CSharp.Algorithms.Core\CSharp.Algorithms.Core.csproj" />
+    <ProjectReference Include="..\CSharp.Algorithms.Problems\CSharp.Algorithms.Problems.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="input.txt">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
+</Project>

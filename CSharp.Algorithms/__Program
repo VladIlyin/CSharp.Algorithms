@@ -1,0 +1,58 @@
+﻿namespace AlgoRythms.CodeWars
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            //var arr2 = new int[][] { new[] { 1, 3 }, new[] { 2, 5 } };
+            //var arr3 = new int[][] { new[] { 2, 5, 3 }, new[] { 1, -2, -1 }, new[] { 1, 3, 4 } };
+            //var arr4 = new int[][] { new[] { 2, 5, 3, 3 }, new[] { 1, -2, -1, -1 }, new[] { 1, 3, 4, 4 }, new[] { 4, 4, 3, 1 } };
+
+            //Console.WriteLine(MatrixDeterminant.Determinant(arr2));
+            //Console.WriteLine(MatrixDeterminant.Determinant(arr3));
+            //Console.WriteLine(MatrixDeterminant.Determinant(arr4));
+
+            //Console.WriteLine(IntToIPv4.UInt32ToIP(2154959208));
+            //Console.WriteLine(IntToIPv4.UInt32ToIP(846347723));
+
+            //ConsoleHelper.Print(Permutations.SinglePermutations("a"));
+            //ConsoleHelper.Print(Permutations.SinglePermutations("ab"));
+            //ConsoleHelper.Print(Permutations.SinglePermutations("aa"));
+            //ConsoleHelper.Print(Permutations.SinglePermutations("abc"));
+            //ConsoleHelper.Print(Permutations.SinglePermutations("abcd"));
+            //ConsoleHelper.Print(Permutations.SinglePermutations("aabb"));
+            //ConsoleHelper.Print(Permutations.SinglePermutationsCodeWarsBest("abcdefghij"));
+            //ConsoleHelper.Print(Permutations.SinglePermutations("abb"));
+
+            //ConsoleHelper.Print(Top3Words.Top3(" ' "));
+            //ConsoleHelper.Print(Top3Words.Top3(" ''' "));
+            //ConsoleHelper.Print(Top3Words.Top3(" ... "));
+            //ConsoleHelper.Print(Top3Words.Top3("a a a  b  c c  d d d d  e e e e e"));
+            //ConsoleHelper.Print(Top3Words.Top3("In a v'illag'e v'illag'e of d'rwz'qjq La'Mancha, v'illag'e name of which I, there won't not won't since won't of those won't for '  '''  ... ."));
+            //ConsoleHelper.Print(Encoding.ASCII.GetBytes("Man").Select(x => Convert.ToString(x, 2)));
+            //ConsoleHelper.Print(Encoding.UTF8.GetBytes("Man").Select(x => Convert.ToString(x, 2)));
+            //Console.WriteLine('a');
+
+            //           Console.WriteLine(Base64.FromBase64("ZWU="));
+            //           Console.WriteLine(Base64.ToBase64("this is a string!!"));
+            //           Console.WriteLine(Base64.FromBase64(Base64.ToBase64("this is a string!!")));
+            //           Console.WriteLine(Base64.ToBase64("ee"));
+            //           Console.WriteLine(Base64.ToBase64("e"));
+            //           Console.WriteLine(Base64.ToBase64(""));
+            //           Console.WriteLine(Base64.ToBase64(@"Man is distinguished, not only by his reason, but by this singular passion from other animals, 
+            //which is a lust of the mind, that by a perseverance of delight in the continued and indefatigable
+            //generation of knowledge, exceeds the short vehemence of any carnal pleasure."));
+            //           Console.WriteLine(Base64.FromBase64(Base64.ToBase64(@"Man is distinguished, not only by his reason, but by this singular passion from other animals, 
+            //which is a lust of the mind, that by a perseverance of delight in the continued and indefatigable
+            //generation of knowledge, exceeds the short vehemence of any carnal pleasure.")));
+
+            //Console.WriteLine(TCP.TraverseStates(new[] { "APP_ACTIVE_OPEN", "RCV_SYN_ACK", "RCV_FIN" }));
+
+            //ConsoleHelper.Print(SimpleAssembler.Interpret(new[] { "mov a 5", "inc a", "dec a", "dec a", "jnz a -1", "inc a" }));
+            //ConsoleHelper.Print(SimpleAssembler.Interpret(new[] { "mov a -10", "mov b a", "inc a", "dec b", "jnz a -2" }));
+            //ConsoleHelper.Print(SimpleAssembler.Interpret(new[] { "mov a 1", "mov b 1", "mov c 0", "mov d 26", "jnz c 2", "jnz 1 5", "mov c 7", "inc d", "dec c", "jnz c -2", "mov c a", "inc a", "dec b", "jnz b -2", "mov b c", "dec d", "jnz d -6", "mov c 18", "mov d 11", "inc a", "dec d", "jnz d -2", "dec c", "jnz c -5" }));
+
+            //Console.WriteLine(Magnets.Doubles(1, 10));
+        }
+    }
+}
