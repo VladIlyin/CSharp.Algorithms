@@ -10,7 +10,7 @@ public class PearsonHashFunction
     public static byte Hash(string input)
     {
         byte hash = 0;
-        byte[] bytes = Encoding.UTF8.GetBytes(input);
+        var bytes = Encoding.UTF8.GetBytes(input);
 
         foreach (var b in bytes)
         {

@@ -4,22 +4,22 @@ public partial class BFSDFS
 {
     public static int[][] Update01MatrixDP(int[][] mat)
     {
-        int rows = mat.Length;
+        var rows = mat.Length;
         if (rows == 0)
             return mat;
-        int cols = mat[0].Length;
+        var cols = mat[0].Length;
 
         // vector<vector<int>> dist(rows, vector<int> (cols, INT_MAX -100000));
         int[][] dist = new int[rows][];
-        for (int i = 0; i < rows; i++)
+        for (var i = 0; i < rows; i++)
         {
             dist[i] = new int[cols];
         }
 
         //First pass: check for left and top
-        for (int i = 0; i < rows; i++)
+        for (var i = 0; i < rows; i++)
         {
-            for (int j = 0; j < cols; j++)
+            for (var j = 0; j < cols; j++)
             {
                 if (mat[i][j] == 0)
                 {
@@ -36,9 +36,9 @@ public partial class BFSDFS
         }
 
         //Second pass: check for bottom and right
-        for (int i = rows - 1; i >= 0; i--)
+        for (var i = rows - 1; i >= 0; i--)
         {
-            for (int j = cols - 1; j >= 0; j--)
+            for (var j = cols - 1; j >= 0; j--)
             {
                 if (i < rows - 1)
                     mat[i][j] = Math.Min(mat[i][j], mat[i + 1][j] + 1);
@@ -52,13 +52,13 @@ public partial class BFSDFS
 
     public static int[][] Update01Matrix(int[][] mat)
     {
-        Queue<(int, int)> queue = new Queue<(int, int)>();
-        HashSet<(int, int)> set = new HashSet<(int, int)>();
-        int[,] visited = new int[mat.Length, mat[0].Length];
+        var queue = new Queue<(int, int)>();
+        var set = new HashSet<(int, int)>();
+        var visited = new int[mat.Length, mat[0].Length];
 
-        for (int i = 0; i < mat.Length; i++)
+        for (var i = 0; i < mat.Length; i++)
         {
-            for (int j = 0; j < mat[i].Length; j++)
+            for (var j = 0; j < mat[i].Length; j++)
             {
                 if (mat[i][j] == 0)
                 {

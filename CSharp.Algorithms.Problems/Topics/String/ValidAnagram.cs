@@ -8,12 +8,12 @@ public partial class StringProblem
 
         var sMap = new int[26];
 
-        foreach (char ch in s)
+        foreach (var ch in s)
         {
             sMap[ch - 'a']++;
         }
 
-        foreach (char ch in t)
+        foreach (var ch in t)
         {
             if (--sMap[ch - 'a'] < 0)
             {

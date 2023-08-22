@@ -8,14 +8,14 @@ public partial class DynamicProgrammingTechnique
         public static int GetMinimumCoins(int[] coins, int amount)
         {
             var dp = new long[amount + 1];
-            for (int i = 0; i <= amount; i++)
+            for (var i = 0; i <= amount; i++)
             {
                 dp[i] = int.MaxValue;
             }
 
             dp[0] = 0;
 
-            for (int i = 1; i <= amount; i++)
+            for (var i = 1; i <= amount; i++)
             {
                 foreach (var coin in coins)
                 {
@@ -39,9 +39,9 @@ public partial class DynamicProgrammingTechnique
             var matrix = InitializeMatrix(coins, amount);
 
             // Iterate through each coin and each amount to fill the matrix
-            for (int coinIndex = 1; coinIndex <= coins.Length; coinIndex++)
+            for (var coinIndex = 1; coinIndex <= coins.Length; coinIndex++)
             {
-                int coin = coins[coinIndex - 1];
+                var coin = coins[coinIndex - 1];
                 for (var currentAmount = 1; currentAmount < amount + 1; currentAmount++)
                 {
                     if (coin < currentAmount)
@@ -71,13 +71,13 @@ public partial class DynamicProgrammingTechnique
         private static float[][] InitializeMatrix(int[] coins, int amount)
         {
             float[][] matrix = new float[coins.Length + 1][];
-            for (int i = 0; i < coins.Length + 1; i++)
+            for (var i = 0; i < coins.Length + 1; i++)
             {
                 matrix[i] = new float[amount + 1];
             }
 
             // Set first row of matrix to positive infinity
-            for (int i = 0; i < amount + 1; i++)
+            for (var i = 0; i < amount + 1; i++)
             {
                 matrix[0][i] = float.PositiveInfinity;
             }

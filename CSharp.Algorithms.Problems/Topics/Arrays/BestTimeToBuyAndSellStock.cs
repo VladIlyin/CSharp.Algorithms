@@ -1,15 +1,15 @@
 ﻿namespace CSharp.Algorithms.Problems.Topics.Arrays;
 
-public partial class Arrays
+public partial class ArraysProblem
 {
     public static int MaxProfit(int[] prices)
     {
         if (prices.Length == 0) return 0;
 
-        int maxProfit = 0;
-        int currMin = prices[0];
+        var maxProfit = 0;
+        var currMin = prices[0];
 
-        for (int i = 1; i < prices.Length; i++)
+        for (var i = 1; i < prices.Length; i++)
         {
             if (prices[i] < prices[i - 1])
             {

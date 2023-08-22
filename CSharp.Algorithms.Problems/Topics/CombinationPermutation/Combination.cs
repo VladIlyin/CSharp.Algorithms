@@ -6,7 +6,7 @@ public partial class Combinatorics
     {
         // A temporary array to store
         // all combination one by one
-        int[] data = new int[k];
+        var data = new int[k];
 
         var arr = Enumerable.Range(1, n).ToArray();
         var res = new List<IList<int>>();
@@ -26,8 +26,8 @@ public partial class Combinatorics
         // to be printed, print it
         if (index == r)
         {
-            List<int> list = new List<int>();
-            for (int j = 0; j < r; j++)
+            var list = new List<int>();
+            for (var j = 0; j < r; j++)
                 list.Add(data[j]);
 
             res.Add(list);

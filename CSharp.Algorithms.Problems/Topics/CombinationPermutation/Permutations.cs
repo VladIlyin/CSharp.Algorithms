@@ -27,7 +27,7 @@ public partial class Combinatorics
             return;
         }
 
-        for (int i = 0; i < nums.Length; i++)
+        for (var i = 0; i < nums.Length; i++)
         {
             if (!used[i])
             {
@@ -49,7 +49,7 @@ public partial class Combinatorics
 
         var res = new List<string>();
 
-        for (int i = 0; i < s.Length; i++)
+        for (var i = 0; i < s.Length; i++)
         {
             res.AddRange(SinglePermutations(
                     s.Remove(i, 1))

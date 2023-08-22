@@ -6,19 +6,19 @@ public partial class StringProblem
     {
         var ransomNoteMap = new int[26];
 
-        foreach (char ch in ransomNote)
+        foreach (var ch in ransomNote)
         {
             ransomNoteMap[ch - 'a']++;
         }
 
         var magazineMap = new int[26];
 
-        foreach (char ch in magazine)
+        foreach (var ch in magazine)
         {
             magazineMap[ch - 'a']++;
         }
 
-        for (int i = 0; i < ransomNoteMap.Length; i++)
+        for (var i = 0; i < ransomNoteMap.Length; i++)
         {
             if (ransomNoteMap[i] == 0)
             {

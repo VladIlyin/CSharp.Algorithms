@@ -6,9 +6,9 @@ public static class GenerateTestData
 {
     public static int[] GenerateArrayOfInteger(int length, int minValue = 0, int maxValue = Int32.MaxValue)
     {
-        Random rand = new Random();
-        int[] arr = new int[length];
-        for (int i = 0; i < length; i++)
+        var rand = new Random();
+        var arr = new int[length];
+        for (var i = 0; i < length; i++)
         {
             arr[i] = rand.Next(minValue, maxValue);
         }
@@ -23,9 +23,9 @@ public static class GenerateTestData
             throw new ArgumentException();
         }
 
-        Random rand = new Random();
-        HashSet<int> hashSet = new HashSet<int>();
-        int currValue = 0;
+        var rand = new Random();
+        var hashSet = new HashSet<int>();
+        var currValue = 0;
 
         while (hashSet.Count < length)
         {
@@ -41,10 +41,10 @@ public static class GenerateTestData
 
     public static string GetRandomString(int length = 7)
     {
-        StringBuilder stringBuilder = new StringBuilder();
-        Random random = new Random();
+        var stringBuilder = new StringBuilder();
+        var random = new Random();
 
-        for (int i = 0; i < length; i++)
+        for (var i = 0; i < length; i++)
         {
             var rnd = random.NextDouble();
             var shift = Convert.ToInt32(Math.Floor(25 * rnd));
@@ -60,7 +60,7 @@ public static class GenerateTestData
         HashSet<string> hashSet = new HashSet<string>();
         string str;
 
-        for (int i = 0; i < count; i++)
+        for (var i = 0; i < count; i++)
         {
             str = GetRandomString(length);
                 

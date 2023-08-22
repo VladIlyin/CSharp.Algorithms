@@ -1,6 +1,6 @@
 ﻿namespace CSharp.Algorithms.Problems.Topics.Arrays;
 
-public partial class TwoPointers
+public partial class ArraysProblem
 {
     /// <summary>
     /// This method takes an integer array nums as input and rearranges
@@ -10,7 +10,7 @@ public partial class TwoPointers
     /// </summary>
     /// <param name="nums"></param>
     /// https://leetcode.com/problems/move-zeroes/
-    public static void MoveZeroes(int[] nums)
+    public void MoveZeroes(int[] nums)
     {
         var lPointer = 0;
         var rPointer = 1;

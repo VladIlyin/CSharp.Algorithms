@@ -38,7 +38,7 @@ public class ChangeMakingProblem
                 if (denominations[i] <= remainingAmount)
                 {
                     // Recursively call function with remaining amount reduced by current coin denomination
-                    int currentMinCoins = GetMinimumCoinsInternal(denominations, numDenominations,
+                    var currentMinCoins = GetMinimumCoinsInternal(denominations, numDenominations,
                         remainingAmount - denominations[i]);
 
 

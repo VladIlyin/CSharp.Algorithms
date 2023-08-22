@@ -12,14 +12,14 @@ public partial class TwoPointers
     /// <param name="s"></param>
     /// <returns>Reversed words</returns>
     /// https://leetcode.com/problems/reverse-words-in-a-string-iii/
-    public static string ReverseWords(string s)
+    public string ReverseWords(string s)
     {
         var sb = new StringBuilder(s.Length);
         string[] words = s.Split(' ');
 
-        for (int i = 0; i < words.Length; i++)
+        for (var i = 0; i < words.Length; i++)
         {
-            for (int j = words[i].Length - 1; j >= 0; j--)
+            for (var j = words[i].Length - 1; j >= 0; j--)
             {
                 sb.Append(words[i][j]);
             }

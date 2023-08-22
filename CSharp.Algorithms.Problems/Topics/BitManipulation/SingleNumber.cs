@@ -21,9 +21,9 @@ public partial class BitManipulation
         
     public static int SingleNumber(int[] nums)
     {
-        int res = 0;
+        var res = 0;
 
-        for (int i = 0; i < nums.Length; i++)
+        for (var i = 0; i < nums.Length; i++)
         {
             res ^= nums[i];
         }

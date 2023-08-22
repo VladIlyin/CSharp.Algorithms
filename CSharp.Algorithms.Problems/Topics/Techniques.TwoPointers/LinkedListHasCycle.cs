@@ -4,7 +4,7 @@ namespace CSharp.Algorithms.Problems.Topics.Techniques.TwoPointers;
 
 public partial class TwoPointers
 {
-    public static bool HasCycle(ListNode? head)
+    public bool HasCycle(ListNode? head)
     {
         if (head == null)
         {

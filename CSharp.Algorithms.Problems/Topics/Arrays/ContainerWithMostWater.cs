@@ -1,12 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace CSharp.Algorithms.Problems.Topics.Arrays
+﻿namespace CSharp.Algorithms.Problems.Topics.Arrays
 {
-    public partial class Arrays
+    public partial class ArraysProblem
     {
         /// <summary>
         /// Returns the maximum amount of water a container can store.

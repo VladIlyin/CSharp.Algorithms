@@ -9,7 +9,7 @@ public static class SimpleAssembler
         var splitedText = program.Select(line => line.Split()).ToList();
         int val;
 
-        for (int i = 0; i < splitedText.Count; i++)
+        for (var i = 0; i < splitedText.Count; i++)
         {
             switch (splitedText[i][0])
             {

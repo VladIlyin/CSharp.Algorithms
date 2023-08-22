@@ -16,7 +16,7 @@ public class BinaryTreeTraversalIterative
         if (root != null)
         {
             Stack<TreeNode> stack = new Stack<TreeNode>();
-            TreeNode? currNode = root;
+            var currNode = root;
 
             while (stack.Count > 0 || currNode != null)
             {
@@ -46,7 +46,7 @@ public class BinaryTreeTraversalIterative
         if (root != null)
         {
             Stack<TreeNode> stack = new Stack<TreeNode>();
-            TreeNode currNode = root;
+            var currNode = root;
 
             while (stack.Count > 0 || currNode != null)
             {
@@ -74,7 +74,7 @@ public class BinaryTreeTraversalIterative
     public static IEnumerable<TreeNode> PostOrder(TreeNode? root)
     {
         Stack<TreeNode> stack = new();
-        TreeNode? currentNode = root;
+        var currentNode = root;
 
         while (stack.Count > 0 || currentNode != null)
         {

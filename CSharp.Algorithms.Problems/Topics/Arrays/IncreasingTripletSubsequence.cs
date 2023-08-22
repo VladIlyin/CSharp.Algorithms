@@ -1,8 +1,6 @@
-﻿using System.Collections.Generic;
-
-namespace CSharp.Algorithms.Problems.Topics.Arrays
+﻿namespace CSharp.Algorithms.Problems.Topics.Arrays
 {
-    public partial class Arrays
+    public partial class ArraysProblem
     {
         public bool IncreasingTriplet(int[] nums)
         {

@@ -12,7 +12,7 @@ public partial class LinkedListOperations
         }
 
         ListNode prev = null;
-        ListNode curr = head;
+        var curr = head;
 
         while (curr != null)
         {
@@ -42,7 +42,7 @@ public partial class LinkedListOperations
     public static ListNode Reverse(ListNode head)
     {
         ListNode prev = null;
-        ListNode curr = head;
+        var curr = head;
         ListNode temp;
 
         while (curr != null)
@@ -91,8 +91,8 @@ public partial class LinkedListOperations
         if (head == null)
             return null;
 
-        ListNode fast = head;
-        ListNode slow = head;
+        var fast = head;
+        var slow = head;
 
         while (fast != null && fast.Next != null)
         {

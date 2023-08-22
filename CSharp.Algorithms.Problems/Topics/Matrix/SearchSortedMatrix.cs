@@ -9,17 +9,17 @@ public partial class MatrixProblem
         if (matrix.Length == 1 && matrix[0].Length == 1)
             return matrix[0][0] == target;
 
-        int rowCount = matrix.Length;
-        int colCount = matrix[0].Length;
+        var rowCount = matrix.Length;
+        var colCount = matrix[0].Length;
         int row = 0, col = 0;
 
-        int minNum = 0;
-        int maxNum = rowCount * colCount - 1;
+        var minNum = 0;
+        var maxNum = rowCount * colCount - 1;
 
         while (minNum <= maxNum)
         {
 
-            int mid = (minNum + maxNum) / 2;
+            var mid = (minNum + maxNum) / 2;
             getCoordinatesByElemNum(mid + 1);
 
             if (target == matrix[row][col])

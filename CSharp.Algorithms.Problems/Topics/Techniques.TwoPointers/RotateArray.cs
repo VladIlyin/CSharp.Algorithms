@@ -12,14 +12,14 @@ public partial class TwoPointers
     /// <param name="nums"></param>
     /// <param name="k"></param>
     /// https://leetcode.com/problems/rotate-array/
-    public static void RotateArray(int[] nums, int k)
+    public void RotateArrayInPlace(int[] nums, int k)
     {
-        if (nums.Length == 0 || k <= 0) return;
+        if (k < 0 || nums.Length == 0 || nums.Length == k)
+        {
+            return;
+        }
 
-        if (nums.Length == k) return;
-
-        if (k > nums.Length)
-            k %= nums.Length;
+        k %= nums.Length;
 
         SwapElements(nums, 0, nums.Length - k - 1);
         SwapElements(nums, nums.Length - k, nums.Length - 1);
@@ -33,11 +33,22 @@ public partial class TwoPointers
             }
         }
     }
-
-    public static void RotatateWithCloning(int[] nums, int k)
+    
+    public void RotateArrayWithCopying(int[] nums, int k)
     {
-        int[] temp = (int[])nums.Clone();
-        for (int i = 0; i < nums.Length; i++)
+        if (k < 0 || nums.Length == 0 || nums.Length == k)
+        {
+            return;
+        }
+
+        k %= nums.Length;
+
+        var temp = new int[nums.Length];
+        Array.Copy(nums, temp, nums.Length);
+
+        for (var i = 0; i < nums.Length; i++)
+        {
             nums[(i + k) % nums.Length] = temp[i];
+        }
     }
 }

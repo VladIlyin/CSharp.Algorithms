@@ -10,22 +10,22 @@ public partial class TwoPointers
     /// <param name="nums"></param>
     /// <returns></returns>
     /// https://leetcode.com/problems/squares-of-a-sorted-array/
-    public static int[] SortedSquares(int[] nums)
+    public int[] SortedSquares(int[] nums)
     {
-        if (nums.Length == 0) return new int[] { };
+        if (nums.Length == 0)
+        {
+            return Array.Empty<int>();
+        }
 
         var res = new int[nums.Length];
 
-        int left,
-            right,
-            pLeft = 0,
-            pRight = nums.Length - 1,
-            i = nums.Length - 1;
+        var (pLeft, pRight) = (0, nums.Length - 1);
+        var i = nums.Length - 1;
 
         while (i >= 0)
         {
-            left = nums[pLeft] * nums[pLeft];
-            right = nums[pRight] * nums[pRight];
+            var left = nums[pLeft] * nums[pLeft];
+            var right = nums[pRight] * nums[pRight];
 
             if (right > left)
             {

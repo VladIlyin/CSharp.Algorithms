@@ -13,6 +13,6 @@ public class TwoPointersTests
     [InlineData(-1, -1, new int[] { -1, 1, 3, 4, 7, 10 }, 16)]
     public void TwoSumOfSortedArrayTest(int l, int r,int[] arr, int target)
     {
-        Assert.Equal((l, r), TwoPointers.TwoSumOfSortedArray(arr, target));
+        Assert.Equal((l, r), new TwoPointers().TwoSumOfSortedArray(arr, target));
     }
 }

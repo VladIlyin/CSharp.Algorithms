@@ -1,25 +1,21 @@
 ﻿namespace CSharp.Algorithms.Problems.Topics.Arrays;
 
-public partial class Arrays
+public partial class ArraysProblem
 {
     // Time-complexity:     O(n)
     // Space-complexity:    O(n)
-    public static int[]? TwoSum(int[] nums, int target)
+    public int[]? TwoSum(int[] nums, int target)
     {
-        Dictionary<int, int> dict = new();
+        var dict = new Dictionary<int, int>();
 
-        for (int i = 0; i < nums.Length; i++)
+        for (var i = 0; i < nums.Length; i++)
         {
             if (dict.ContainsKey(nums[i]))
             {
-                return new int[] { dict[nums[i]], i };
+                return new[] { dict[nums[i]], i };
             }
 
-            int key = target - nums[i];
-            if (!dict.ContainsKey(key))
-            {
-                dict.Add(key, i);
-            }
+            dict.Add(target - nums[i], i);
         }
 
         return null;

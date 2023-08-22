@@ -49,7 +49,7 @@ public class BinarySearchTreeOperations
     {
         if (root == null) return root;
 
-        (TreeNode curr, TreeNode? prev) = (root, null);
+        (var curr, TreeNode? prev) = (root, null);
 
         while (curr != null)
         {

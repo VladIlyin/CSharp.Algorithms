@@ -10,9 +10,9 @@ public partial class SlidingWindow
         var maxSum = arr[0];
         var currentSum = 0;
         int maxL = 0, maxR = 0;
-        int lPointer = 0;
+        var lPointer = 0;
 
-        for (int rPointer = 0; rPointer <= arr.Length - 1; rPointer++)
+        for (var rPointer = 0; rPointer <= arr.Length - 1; rPointer++)
         {
             if (currentSum < 0)
             {

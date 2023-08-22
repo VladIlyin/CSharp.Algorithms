@@ -9,8 +9,8 @@ public static class Base64
     {
         var bytes = string.Join(null, s.Select(x => Convert.ToString(x, 2).PadLeft(8, '0')));
 
-        StringBuilder sb = new StringBuilder();
-        for (int i = 0; i < bytes.Length; i += 6)
+        var sb = new StringBuilder();
+        for (var i = 0; i < bytes.Length; i += 6)
         {
             if (i + 6 > bytes.Length)
             {
@@ -33,8 +33,8 @@ public static class Base64
         var bytes = string.Join(
             null, s.TrimEnd('=').Select(x => Convert.ToString(base64Table.IndexOf(x), 2).PadLeft(6, '0')));
 
-        StringBuilder sb = new StringBuilder();
-        for (int i = 0; i + 6 < bytes.Length; i += 8)
+        var sb = new StringBuilder();
+        for (var i = 0; i + 6 < bytes.Length; i += 8)
         {
             sb.Append((char)Convert.ToInt16(bytes.Substring(i, 8), 2));
         }

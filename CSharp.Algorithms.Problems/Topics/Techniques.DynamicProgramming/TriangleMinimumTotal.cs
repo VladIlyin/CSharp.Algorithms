@@ -5,13 +5,13 @@ public class TriangleMinimumTotal
     // https://www.youtube.com/watch?v=9z27sGgMRdw
     public static int MinimumTotal(IList<IList<int>> triangle)
     {
-        int n = triangle.Count;
+        var n = triangle.Count;
         var memo = new int[n][];
 
-        for (int i = 0; i < n; i++)
+        for (var i = 0; i < n; i++)
         {
             memo[i] = new int[n];
-            for (int j = 0; j < memo[i].Length; j++)
+            for (var j = 0; j < memo[i].Length; j++)
             {
                 memo[i][j] = int.MaxValue;
             }
@@ -19,8 +19,8 @@ public class TriangleMinimumTotal
 
         memo[0][0] = triangle[0][0];
 
-        for (int i = 1; i < n; i++)
-        for (int j = 0; j < triangle[i].Count; j++)
+        for (var i = 1; i < n; i++)
+        for (var j = 0; j < triangle[i].Count; j++)
         {
             memo[i][j] =
                 Math.Min(

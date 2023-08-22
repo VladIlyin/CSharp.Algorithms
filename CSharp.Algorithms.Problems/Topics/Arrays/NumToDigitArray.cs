@@ -1,6 +1,6 @@
 ﻿namespace CSharp.Algorithms.Problems.Topics.Arrays;
 
-public static class NumToDigitArray
+public partial class ArraysProblem
 {
     public static IEnumerable<int> NumToArrayOfDigit(long n)
     {

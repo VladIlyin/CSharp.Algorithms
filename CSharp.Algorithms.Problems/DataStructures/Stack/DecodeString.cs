@@ -56,7 +56,7 @@ namespace CSharp.Algorithms.Problems.DataStructures.Stack
             }
 
             // collect the string
-            StringBuilder ret = new StringBuilder();
+            var ret = new StringBuilder();
 
             foreach (var ch in stack.Reverse())
             {

@@ -25,8 +25,8 @@
 
             static int QuickSelect(List<int> nums, int k)
             {
-                int pivotIndex = new Random().Next(nums.Count);
-                int pivot = nums[pivotIndex];
+                var pivotIndex = new Random().Next(nums.Count);
+                var pivot = nums[pivotIndex];
 
                 var left = new List<int>();
                 var mid = new List<int>();

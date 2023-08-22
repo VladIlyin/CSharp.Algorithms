@@ -5,12 +5,12 @@ public partial class BFSDFS
     public static int MaxAreaOfIsland(int[][] grid)
     {
 
-        int maxArea = 0;
-        Queue<(int, int)> queue = new Queue<(int, int)>();
+        var maxArea = 0;
+        var queue = new Queue<(int, int)>();
 
-        for (int i = 0; i < grid.Length; i++)
+        for (var i = 0; i < grid.Length; i++)
         {
-            for (int j = 0; j < grid[i].Length; j++)
+            for (var j = 0; j < grid[i].Length; j++)
             {
                 if (grid[i][j] == 1)
                 {
@@ -21,13 +21,13 @@ public partial class BFSDFS
 
         int CalculateArea(int i, int j)
         {
-            int area = 1;
+            var area = 1;
             queue.Enqueue((i, j));
             grid[i][j] = -1;
 
             while (queue.Count > 0)
             {
-                (int sr, int sc) = queue.Dequeue();
+                (var sr, var sc) = queue.Dequeue();
 
                 // go right
                 if (sc < grid[sr].Length - 1 && grid[sr][sc + 1] == 1)

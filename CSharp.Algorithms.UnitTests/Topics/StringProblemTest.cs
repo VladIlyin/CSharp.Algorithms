@@ -33,5 +33,21 @@ namespace CSharp.Algorithms.UnitTests.Topics
             Assert.Equal(expected, actual);
             Assert.Equal(charsChanged, chars.Take(expected));
         }
+
+        [Theory]
+        [InlineData("", "")]
+        [InlineData("A", "A")]
+        [InlineData("AAA", "A3")]
+        [InlineData("ABC", "ABC")]
+        [InlineData("AABBCC", "A2B2C2")]
+        [InlineData("ABBCCC", "AB2C3")]
+        [InlineData("AAABBC", "A3B2C")]
+        [InlineData("AAABBCDE", "A3B2CDE")]
+        [InlineData("AAAABBBCCXYZDDDDEEEEAAABBBBBBBBBB", "A4B3C2XYZD4E4A3B10")]
+        public void RleTest(string str, string expected)
+        {
+            var actual = new StringProblem().RLE(str);
+            Assert.Equal(expected, actual);
+        }
     }
 }

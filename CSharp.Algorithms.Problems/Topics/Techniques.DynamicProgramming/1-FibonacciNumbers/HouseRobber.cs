@@ -6,10 +6,10 @@ public partial class DynamicProgrammingTechnique
 
     public static int Rob(int[] nums)
     {
-        int max = nums[0];
-        int temp = 0;
+        var max = nums[0];
+        var temp = 0;
 
-        foreach (int i in nums[1..])
+        foreach (var i in nums[1..])
         {
             (max, temp) = (Math.Max(i + temp, max), max);
         }

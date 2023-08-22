@@ -1,9 +1,11 @@
-﻿namespace CSharp.Algorithms.Problems.Topics.Arrays
+﻿using System.Reflection.Metadata.Ecma335;
+
+namespace CSharp.Algorithms.Problems.Topics.Arrays
 {
-    public partial class Arrays
+    public partial class ArraysProblem
     {
         /// <summary>
-        /// Returns true if s is a subsequence of t, or false otherwise.
+        /// Returns true if `s` is a subsequence of `t`, or false otherwise.
         /// </summary>
         /// <param name="s"></param>
         /// <param name="t"></param>
@@ -13,18 +15,21 @@
             if (s.Length > t.Length) return false;
             if (s.Length == 0) return true;
 
-            var (firstPtr, secondPtr) = (0, 0);
+            var ptr = 0;
 
-            for (firstPtr = 0; firstPtr < t.Length; firstPtr++)
+            foreach (var ch in t)
             {
-                if (t[firstPtr] == s[secondPtr])
+                if (ch == s[ptr])
                 {
-                    secondPtr++;
-                    if (s.Length == secondPtr) return true;
+                    ptr++;
+                    if (s.Length == ptr)
+                    {
+                        return true;
+                    }
                 }
             }
 
-            return s.Length == secondPtr;
+            return s.Length == ptr;
         }
 
         private readonly Dictionary<string, int?[]> _memo = new();

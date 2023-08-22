@@ -14,7 +14,7 @@ public class ArraysTests
     [InlineData(-1, new int[] { -4, -1, -2, -7, -3, -4 })]
     public void KadanesAlgorithmsTest(int maxSum, int[] inputArray)
     {
-        Assert.Equal(maxSum, ArraysProblem.FindMaxSumSubarray(inputArray));
+        Assert.Equal(maxSum, new ArraysProblem().FindMaxSumSubarray(inputArray));
     }
 
     [Theory]
@@ -26,7 +26,7 @@ public class ArraysTests
     [InlineData(1, 1, new int[] { -4, -1, -2, -7, -3, -4 })]
     public void KadanesAlgorithmsReturnsSubarrayIndixesTest(int left, int right, int[] inputArray)
     {
-        Assert.Equal((left, right), ArraysProblem.FindMaxSumSubarrayIndexes(inputArray));
+        Assert.Equal((left, right), new ArraysProblem().FindMaxSumSubarrayIndexes(inputArray));
     }
 
     [Fact]

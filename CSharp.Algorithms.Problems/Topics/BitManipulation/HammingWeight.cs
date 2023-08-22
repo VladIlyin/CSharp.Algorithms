@@ -4,7 +4,7 @@ public partial class BitManipulation
 {
     public static int HammingWeight(uint n)
     {
-        int count = 0;
+        var count = 0;
 
         while (n != 0)
         {

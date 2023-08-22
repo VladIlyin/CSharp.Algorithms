@@ -32,9 +32,9 @@ public static class ConsoleHelper
     public static void PrintMatrix(int[][] matrix)
     {
         System.Console.ForegroundColor = ConsoleColor.Green;
-        for (int i = 0; i < matrix.Length; i++)
+        for (var i = 0; i < matrix.Length; i++)
         {
-            for (int j = 0; j < matrix[i].Length; j++)
+            for (var j = 0; j < matrix[i].Length; j++)
             {
                 System.Console.Write(matrix[i][j]);
                 System.Console.Write(' ');
@@ -96,13 +96,13 @@ public static class ConsoleHelper
         Queue<TreeNode> queue = new();
         TreeNode node;
         queue.Enqueue(root);
-        int count = 0;
+        var count = 0;
 
         while (queue.Count != 0)
         {
             count = queue.Count;
 
-            for (int i = 0; i < count; i++)
+            for (var i = 0; i < count; i++)
             {
                 node = queue.Dequeue();
 

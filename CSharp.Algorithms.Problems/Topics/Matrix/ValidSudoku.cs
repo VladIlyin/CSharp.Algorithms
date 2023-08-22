@@ -4,7 +4,7 @@ public partial class MatrixProblem
 {
     public static bool IsValidSudoku(char[][] board)
     {
-        for (int i = 0; i < board.Length; i++)
+        for (var i = 0; i < board.Length; i++)
         {
             if (!CheckRowAndColumn(board, i))
             {
@@ -25,10 +25,10 @@ public partial class MatrixProblem
 
     static bool CheckRowAndColumn(char[][] board, int idx)
     {
-        HashSet<char> row = new HashSet<char>(9);
-        HashSet<char> column = new HashSet<char>(9);
+        var row = new HashSet<char>(9);
+        var column = new HashSet<char>(9);
 
-        for (int i = 0; i < board.Length; i++)
+        for (var i = 0; i < board.Length; i++)
         {
             if (row.Contains(board[idx][i]) || column.Contains(board[i][idx]))
             {
@@ -45,13 +45,13 @@ public partial class MatrixProblem
 
     static bool CheckSubBoxes(char[][] board, int iInit)
     {
-        HashSet<char> subBox = new HashSet<char>(9);
+        var subBox = new HashSet<char>(9);
 
-        for (int jInit = 0; jInit < board[iInit].Length; jInit += 3)
+        for (var jInit = 0; jInit < board[iInit].Length; jInit += 3)
         {
-            for (int i = iInit; i < iInit + 3; i++)
+            for (var i = iInit; i < iInit + 3; i++)
             {
-                for (int j = jInit; j < jInit + 3; j++)
+                for (var j = jInit; j < jInit + 3; j++)
                 {
                     if (subBox.Contains(board[i][j]))
                     {

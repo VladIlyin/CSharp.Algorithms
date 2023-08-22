@@ -1,6 +1,6 @@
 ﻿namespace CSharp.Algorithms.Problems.Topics.Arrays
 {
-    public partial class Arrays
+    public partial class ArraysProblem
     {
         /// <summary>
         /// Return an array answer such that answer[i] is equal

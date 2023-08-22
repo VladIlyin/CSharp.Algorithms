@@ -1,6 +1,6 @@
 ﻿namespace CSharp.Algorithms.Problems.Topics.Arrays;
 
-public partial class Arrays
+public partial class ArraysProblem
 {
     public static IList<IList<int>> Generate(int numRows)
     {
@@ -13,13 +13,13 @@ public partial class Arrays
             new List<int>() { 1, 1 },
         };
 
-        int n = 3;
+        var n = 3;
 
         while (n <= numRows)
         {
             res.Add(new List<int>() { 1 });
 
-            for (int i = 0; i < res[n - 2].Count - 1; i++)
+            for (var i = 0; i < res[n - 2].Count - 1; i++)
             {
                 res[n - 1].Add(res[n - 2][i] + res[n - 2][i + 1]);
             }

@@ -12,13 +12,13 @@ public partial class TwoPointers
     /// <param name="head"></param>
     /// <returns></returns>
     /// https://leetcode.com/problems/middle-of-the-linked-list/
-    public static ListNode? MiddleNode(ListNode? head)
+    public ListNode? MiddleNode(ListNode? head)
     {
         if (head == null)
             return null;
 
-        ListNode fast = head;
-        ListNode slow = head;
+        var fast = head;
+        var slow = head;
 
         while (fast != null && fast.Next != null)
         {

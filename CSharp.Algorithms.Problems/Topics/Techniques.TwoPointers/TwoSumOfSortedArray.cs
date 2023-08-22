@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace CSharp.Algorithms.Problems.Topics.Techniques.TwoPointers;
+﻿namespace CSharp.Algorithms.Problems.Topics.Techniques.TwoPointers;
 
 public partial class TwoPointers
 {
@@ -15,7 +9,7 @@ public partial class TwoPointers
     /// </summary>
     /// <param name="arr">Sorted array</param>
     /// <returns></returns>
-    public static (int left, int right) TwoSumOfSortedArray(int[] arr, int target)
+    public (int left, int right) TwoSumOfSortedArray(int[] arr, int target)
     {
         if (arr.Length <= 1)
         {

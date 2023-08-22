@@ -33,11 +33,11 @@ public static class ArrayHelper
     /// <param name="insertFrom"></param>
     public static void Insert<T>(this T[] arr, int insertAt, int insertFrom)
     {
-        T temp = arr[insertAt];
+        var temp = arr[insertAt];
 
         arr[insertAt] = arr[insertFrom];
 
-        for (int i = insertFrom; i > insertAt + 1; i--)
+        for (var i = insertFrom; i > insertAt + 1; i--)
         {
             arr[i] = arr[i - 1];
         }
@@ -57,7 +57,7 @@ public static class ArrayHelper
     public static void Merge<T>(this T[] arr, T[] left, T[] right)
     {
         Comparer<T> comparer = Comparer<T>.Default;
-        int count = left.Length + right.Length;
+        var count = left.Length + right.Length;
         int indexMerged = 0, indexLeft = 0, indexRight = 0;
 
         while (count > 0)

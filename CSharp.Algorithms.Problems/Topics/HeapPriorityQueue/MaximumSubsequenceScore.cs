@@ -28,17 +28,17 @@
             // Use a min-heap to maintain the top k elements.
             var topKHeap = new PriorityQueue<int, int>();
             long topKSum = 0;
-            for (int i = 0; i < k; ++i)
+            for (var i = 0; i < k; ++i)
             {
                 topKSum += pairs[i][0];
                 topKHeap.Enqueue(pairs[i][0], pairs[i][0]);
             }
 
             // The score of the first k pairs.
-            long answer = topKSum * pairs[k - 1][1];
+            var answer = topKSum * pairs[k - 1][1];
 
             // Iterate over every nums2[i] as minimum from nums2.
-            for (int i = k; i < n; ++i)
+            for (var i = k; i < n; ++i)
             {
                 // Remove the smallest integer from the previous top k elements
                 // then add nums1[i] to the top k elements.

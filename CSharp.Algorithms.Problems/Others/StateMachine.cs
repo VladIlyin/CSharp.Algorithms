@@ -31,7 +31,7 @@ public static class TCP
     {
         var state = "CLOSED"; // initial state, always
 
-        for (int i = 0; i < events.Length; i++)
+        for (var i = 0; i < events.Length; i++)
         {
             if (!StateEvent.TryGetValue($"{state}:{events[i]}", out state))
             {

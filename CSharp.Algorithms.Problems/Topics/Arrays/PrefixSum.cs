@@ -1,12 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿namespace CSharp.Algorithms.Problems.Topics.Arrays;
 
-namespace CSharp.Algorithms.Problems.Topics.Arrays;
-
-public partial class Arrays
+public partial class ArraysProblem
 {
     public static PrefixSum GetPrefixSum(int[] array)
     {

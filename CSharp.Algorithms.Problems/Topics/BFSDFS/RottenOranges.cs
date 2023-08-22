@@ -4,15 +4,15 @@ public partial class BFSDFS
 {
     public static int OrangesRotting(int[][] grid)
     {
-        int m = grid.Length;
-        int n = grid[0].Length;
-        int oranges = 0;//contains total oranges present 
-        int count = 0;//contains count of rotten oranges
-        int ans = 0;
-        Queue<(int, int)> rotten = new Queue<(int, int)>();//used for bfs
-        for (int i = 0; i < m; i++)
+        var m = grid.Length;
+        var n = grid[0].Length;
+        var oranges = 0;//contains total oranges present 
+        var count = 0;//contains count of rotten oranges
+        var ans = 0;
+        var rotten = new Queue<(int, int)>();//used for bfs
+        for (var i = 0; i < m; i++)
         {
-            for (int j = 0; j < n; j++)
+            for (var j = 0; j < n; j++)
             {
                 if (grid[i][j] != 0) { oranges++; }//counting oranges
                 if (grid[i][j] == 2) { rotten.Enqueue((i, j)); }//storing indexes of rotten oranges for BFS.
@@ -24,19 +24,19 @@ public partial class BFSDFS
 
         while (rotten.Count > 0)
         {
-            int k = rotten.Count;
+            var k = rotten.Count;
             count += k;//increase count by number of rotten oranges
             while (k > 0)
             {//checking nearby oranges of rotten oranges
                 k--;
-                (int x, int y) = rotten.Dequeue();
+                (var x, var y) = rotten.Dequeue();
                 //int x = rotten.front().first;
                 //int y = rotten.front().second;
                 //rotten.pop();//removing that index from queue after checking
-                for (int i = 0; i < 4; i++)
+                for (var i = 0; i < 4; i++)
                 {
-                    int newx = x + dx[i];
-                    int newy = y + dy[i];
+                    var newx = x + dx[i];
+                    var newy = y + dy[i];
                     if (newx < 0 || newx >= m || newy < 0 || newy >= n || grid[newx][newy] != 1) 
                     { 
                         continue; 

@@ -8,14 +8,14 @@ public class RandomString
 
     public string GetRandomString(int length = 7)
     {
-        StringBuilder stringBuilder = new StringBuilder();
-        Random random = new Random();
+        var stringBuilder = new StringBuilder();
+        var random = new Random();
 
         char letter;
         double rnd;
         int shift;
 
-        for (int i = 0; i < length; i++)
+        for (var i = 0; i < length; i++)
         {
             rnd = random.NextDouble();
             shift = Convert.ToInt32(Math.Floor(25 * rnd));
@@ -44,7 +44,7 @@ public class RandomString
         _set.Clear();
         string str;
 
-        for (int i = 0; i < count; i++)
+        for (var i = 0; i < count; i++)
         {
             str = GetRandomString(length);
 

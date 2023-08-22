@@ -14,17 +14,17 @@ public class MurmurHashFunction
     {
         var data = Encoding.UTF8.GetBytes(value);
 
-        int length = data.Length;
+        var length = data.Length;
 
         if (length == 0)
             return 0;
 
-        int h = seed ^ length;
-        int currentIndex = 0;
+        var h = seed ^ length;
+        var currentIndex = 0;
 
         while (length >= 4)
         {
-            int k = data[currentIndex++] | data[currentIndex++] << 8 | data[currentIndex++] << 16 | data[currentIndex++] << 24;
+            var k = data[currentIndex++] | data[currentIndex++] << 8 | data[currentIndex++] << 16 | data[currentIndex++] << 24;
             k *= m;
             k ^= k >> r;
             k *= m;

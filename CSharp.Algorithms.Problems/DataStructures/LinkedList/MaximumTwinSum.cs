@@ -6,8 +6,8 @@ namespace CSharp.Algorithms.Problems.DataStructures.LinkedList
     {
         public int PairSum(ListNode head)
         {
-            ListNode slow = head;
-            ListNode fast = head;
+            var slow = head;
+            var fast = head;
 
             // Get middle of the linked list.
             while (fast != null && fast.Next != null)
@@ -26,8 +26,8 @@ namespace CSharp.Algorithms.Problems.DataStructures.LinkedList
                 slow = NextNode;
             }
 
-            ListNode start = head;
-            int maximumSum = 0;
+            var start = head;
+            var maximumSum = 0;
 
             while (prev != null)
             {

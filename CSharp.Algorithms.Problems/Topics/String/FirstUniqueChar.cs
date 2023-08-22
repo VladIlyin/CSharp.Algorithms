@@ -14,7 +14,7 @@ public partial class StringProblem
             map[ch - 'a']++;
         }
 
-        for (int i = 0; i < s.Length; i++)
+        for (var i = 0; i < s.Length; i++)
         {
             if (map[s[i] - 'a'] == 1)
             {
