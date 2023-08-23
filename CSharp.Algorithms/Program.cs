@@ -61,9 +61,3 @@
 //{
 //    Console.WriteLine(str);
 //}
-
-using CSharp.Algorithms;
-using CSharp.Algorithms.Problems.Topics.Arrays;
-using CSharp.Algorithms.Problems.Topics.Techniques.TwoPointers;
-
-ConsoleHelper.Print(new TwoPointers().SortedSquares(new int[] { -7, -3, 2, 3, 11 }));

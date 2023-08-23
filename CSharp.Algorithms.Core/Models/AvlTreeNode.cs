@@ -1,6 +1,4 @@
-﻿using System.Xml.Linq;
-
-namespace CSharp.Algorithms.Core.Models
+﻿namespace CSharp.Algorithms.Core.Models
 {
     public class AvlTreeNode
     {
@@ -14,12 +12,12 @@ namespace CSharp.Algorithms.Core.Models
 
         public AvlTreeNode(
             int val,
-            AvlTreeNode left = null,
-            AvlTreeNode right = null,
+            AvlTreeNode? left = null,
+            AvlTreeNode? right = null,
             byte height = 1)
         {
             this.val = val;
-            this.left = this.left;
+            this.left = left;
             this.right = right;
             this.height = height;
         }

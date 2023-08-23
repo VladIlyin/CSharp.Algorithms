@@ -24,10 +24,4 @@
     <ProjectReference Include="..\CSharp.Algorithms.Problems\CSharp.Algorithms.Problems.csproj" />
   </ItemGroup>
 
-  <ItemGroup>
-    <None Update="input.txt">
-      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
-    </None>
-  </ItemGroup>
-
 </Project>

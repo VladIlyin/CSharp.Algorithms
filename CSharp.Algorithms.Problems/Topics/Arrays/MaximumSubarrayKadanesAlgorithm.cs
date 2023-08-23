@@ -1,4 +1,4 @@
-﻿namespace CSharp.Algorithms.Problems.DataStructures.Arrays;
+﻿namespace CSharp.Algorithms.Problems.Topics.Arrays;
 
 /// <summary>
 /// In computer science, the maximum sum subarray problem,
